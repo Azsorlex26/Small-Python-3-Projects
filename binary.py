@@ -1,0 +1,8 @@
+print(format(1, "08b"))
+print(format(2, "08b"))
+print(format(4, "08b"))
+print(format(8, "08b"))
+print(format(16, "08b"))
+print(format(32, "08b"))
+print(format(64, "08b"))
+print(format(128, "08b"))
