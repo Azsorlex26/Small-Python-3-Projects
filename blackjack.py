@@ -14,7 +14,7 @@ class Person: # An abstract class for the two types of people. I ran out of name
         i = randint(0, len(deck) - 1)
         hand.append(deck[i])
         del deck[i]
-        
+
         try:
             hand_value = self.hand_value(hand)
         except:
