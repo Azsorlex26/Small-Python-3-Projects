@@ -35,7 +35,14 @@ class Player:
         self.balance = 0
 
 def setup():
-    raise NotImplementedError
+    for value in range(2, 15): # Repeats by the number of card types in each deck
+        suits = ['H', 'D', 'C', 'S']
+        for suit in suits: # Repeats by the quantity of each card type
+            if value <= 10:
+                deck.append(Card(str(value), value, suit, suits.index(suit))) # Add a numbered card
+            else:
+                faces = ['J', 'Q', 'K', 'A']
+                deck.append(Card(faces[value - 11], value, suit, suits.index(suit))) # Add a face card
 
 def players_turn():
     raise NotImplementedError

@@ -163,14 +163,12 @@ def players_turn(): # What happens in the player's turn. Returns false if the pl
             bet = int(input("How much would you like to bet? $"))
             if bet > balance:
                 print("You don't have that much money.\n")
-                continue
             elif bet < 0:
                 print("You can't input a negative number.\n")
-                continue
             elif bet == 0:
                 print("You have to bet something.\n")
-                continue
-            break
+            else:
+                break
         except:
             print("You can only input an integer.\n")
 
