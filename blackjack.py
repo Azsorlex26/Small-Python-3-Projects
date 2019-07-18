@@ -78,7 +78,7 @@ class Player(Person): # Since the player has the ability to possess multiple han
         print(cards) # Display all of the hand's cards
 
         """Commented out for now
-        
+
         if blackjack(hand): # If the hand has a blackjack, say so. Otherwise just show the total value
             print("Blackjack!")
         else:"""
@@ -90,7 +90,7 @@ class Player(Person): # Since the player has the ability to possess multiple han
 
         if len(self.hands) == 4:
             return
-        
+
         while True:
             try:
                 if len(self.hands) == 1:
@@ -110,7 +110,7 @@ class Player(Person): # Since the player has the ability to possess multiple han
                 break
             except:
                 print("Only a valid number can be input")
-    
+
 class Dealer(Person): # The dealer can't split, so this class only revolves around one list
     def __init__(self):
         self.hand = list()
@@ -215,7 +215,7 @@ while True: # The main process of the game
     if players_turn(): # Carry on with the dealer's turn if the player hasn't gone over 21
         dealers_turn()
 
-    if balance > 0 and input("\nWould you like to play again? y/n ") == 'y':
+    if balance > 0 and input("Would you like to play again? y/n ") == 'y':
         print()
     else:
         if balance > 0:
